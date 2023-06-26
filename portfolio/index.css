@@ -100,6 +100,5 @@ nav ul li a:hover::after {
     font-size: 30px;
     margin-right: -400px;
     z-index: 1;
-
 }
 
