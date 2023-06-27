@@ -1,139 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text" href="/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <style>
-        
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'roboto', sans-serif, "Times New Roman";
-}
-
-body{
-    background-color:#010101;
-    color: #ffff;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-#header{
-    padding:50px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;    
-    height: 60vh;
-    height:100vh;
-    display: grid;
-    grid-template-columns: auto auto;
-    right: 0;
-    top: 0;
-    background-size:cover;
-    background-position:center;
-
-}
-
-#header-img{
-    height: 100%;
-    margin-left: -100px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    background-image: url(/images/pexels-tucă-bianca-848117.jpg);
-
-}
-
-
-.container{
-    padding: 10px 10px;
-}
-#logo{
-    width: 100px;
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-   
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 40px ;
-
-}
-
-nav ul li {
-display: inline-block;
-list-style: none;
-margin: 10px 20px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a::after {
-    content:"";
-    width: 0;
-    height: 3px;
-    background-color: yellow;
-    position:absolute;
-    left: 0;
-    bottom: -6px;
-    transition: ease-in 0.2s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
- } 
-
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-    margin-right: -400px;
-    z-index: 1;
-
-}
-
-
-    </style>
-
-</head>
-<body>
-<nav>
-    <img src="images/logo.png" alt="" srcset="" id="logo">
-    <ul>
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" alt="" srcset="" id="logo" />
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul>    
-</nav>
-<div id="header">
-    <div class="header-text">
-    <h2>hi, my name is kevin</h2>
-    <p >Welcome to my portfolio</p>
+      </ul>
+    </nav>
+    <!--         the header falls below           -->
+    <div id="header">
+      <div class="header-text">
+        <span id="small_text">UI/UX Designer</span> <br />
+        <span id="big_text"
+          >HI, I'm Kevin <br />
+          McCook from Jamaica</span
+        >
+        <br />
+        <span> Welcome to my online portfolio</span>
+      </div>
+
+      <div id="header-img"></div>
     </div>
-  
-   <div id="header-img"></div>
-
-</div>
-
-    
-</body>
+    <!--         the the about is below           -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about_col1">
+            <img src="images/pexels-tucă-bianca-848117.jpg" alt="" />
+          </div>
+          <div class="about_col2">about me</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
