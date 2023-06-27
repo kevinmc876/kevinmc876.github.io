@@ -68,7 +68,7 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: url("/images/pexels-tucă-bianca-848117.jpg")
+    background-image: url("/images/pexels-tucă-bianca-848117.jpg");
 
 }
 
@@ -76,13 +76,17 @@ body{
     padding: 10px 10px;
 }
 #logo{
-
+    font-size:30px;
+    font-weight: bolder;
     width: 100px;
-   content:"Kevin" ;
     height: 30px;
     width: 30px;
     
    
+}
+
+.color-span{
+    color:red;
 }
 
 nav {
@@ -126,10 +130,13 @@ nav ul li a:hover::after {
 /* ---------------------------ABOUT----------------------------------- */
 
 #about{
-    width: 100%;
     height: 500px;
-    background: #010101;
+    background: beige;
+    width: 100%;
     color: #ffff;
+    position: relative;
+    margin-block:50px;
+    padding-block: 50px;
 }
 .row{
     display: flex;
@@ -137,12 +144,19 @@ nav ul li a:hover::after {
     justify-content: space-between;
 }
 
-.col-1{
-    position: relative;
+.about_col1{
+ 
     flex-basis: 35%;
 }
-.col-1 img{
+.about_col1 img{
     background-size: cover;
     width: 100%;
     border-radius: 15px;
 }
+
+.about_col2{
+    font-size: 16px;
+
+}
+
+/* ---------------------------ABOUT----------------------------------- */
