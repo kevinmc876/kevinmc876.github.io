@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/main.css" />
-    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <nav>
-      <p id="logo"><span class="color-span">ke</span>vin</p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- The header section starts here -->
-    <div id="header">
-      <div class="header-text">
-        <span id="small_text">UI/UX Designer</span> <br />
-        <span id="big_text">HI, I'm Kevin <br /> McCook from Jamaica</span> <br />
-        <span>Welcome to My Online Portfolio.</span>
-      </div>
-      <div id="header-img"></div>
-    </div>
-    <!-- The about section starts here -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col1">
-            <!-- <img src="images/pexels-tucă-bianca-848117.jpg" alt="" /> -->
-          </div>
-          <div class="about-col2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio recusandae ipsum neque totam temporibus quod eos,
-              architecto ducimus dicta, enim repudiandae et sapiente repellendus
-              tempore deleniti qui. Fugiat, quae ipsum.
-            </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmer Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add your custom CSS styles here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section id="intro">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm [Your Name], a passionate programmer ready to take on new challenges.</p>
+    </section>
+    
+    <section id="portfolio">
+      <h2>Portfolio Showcase</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of Project 1.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
           </div>
         </div>
+        <!-- Add more project cards here -->
       </div>
-    </div>
-  </body>
+    </section>
+    
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+      </div>
+      <!-- Add more skills with progress bars here -->
+    </section>
+    
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">"Great work! [Your Name] is a talented programmer with a keen eye for detail."</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Add your custom JavaScript code here
+  </script>
+</body>
 </html>
+Sure! Here's a basic structure for your landing page using HTML, CSS, JavaScript, and Bootstrap CDN:
