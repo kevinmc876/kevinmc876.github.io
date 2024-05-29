@@ -3,17 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programmer Portfolio</title>
+  <title>Kevin McCook - Junior Front End Developer</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    /* Add your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    #intro {
+      text-align: center;
+      padding: 50px 0;
+    }
+    #portfolio .card {
+      margin-bottom: 30px;
+    }
+    #skills .progress {
+      margin-bottom: 20px;
+    }
+    #contact {
+      padding: 50px 0;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <section id="intro">
       <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I'm [Your Name], a passionate programmer ready to take on new challenges.</p>
+      <p>Hi, I'm Kevin McCook, a passionate junior front end developer ready to take on new challenges.</p>
+      <img src="https://via.placeholder.com/150" alt="Kevin McCook" class="rounded-circle">
     </section>
     
     <section id="portfolio">
@@ -21,7 +38,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card">
-            <img src="project1.jpg" class="card-img-top" alt="Project 1">
+            <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Project 1">
             <div class="card-body">
               <h5 class="card-title">Project 1</h5>
               <p class="card-text">Description of Project 1.</p>
@@ -36,18 +53,28 @@
     <section id="skills">
       <h2>Skills</h2>
       <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
       </div>
-      <!-- Add more skills with progress bars here -->
+      <p>HTML and CSS are the foundational languages for creating web pages. HTML provides the structure, while CSS gives the page its layout and style.</p>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+      </div>
+      <p>JavaScript is a versatile scripting language used to create dynamic and interactive effects on web pages, enhancing user experience.</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+      </div>
+      <p>Bootstrap is a popular CSS framework that helps in designing responsive and mobile-first websites quickly with pre-styled components.</p>
+      <!-- Add more skills with progress bars and descriptions here -->
     </section>
     
     <section id="testimonials">
       <h2>Testimonials</h2>
       <div class="card">
         <div class="card-body">
-          <p class="card-text">"Great work! [Your Name] is a talented programmer with a keen eye for detail."</p>
+          <p class="card-text">"Great work! Kevin McCook is a talented programmer with a keen eye for detail."</p>
         </div>
       </div>
+      <!-- Add more testimonials here -->
     </section>
     
     <section id="contact">
@@ -69,9 +96,5 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    // Add your custom JavaScript code here
-  </script>
 </body>
 </html>
-Sure! Here's a basic structure for your landing page using HTML, CSS, JavaScript, and Bootstrap CDN:
