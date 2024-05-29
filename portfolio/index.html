@@ -24,15 +24,32 @@
     #contact {
       padding: 50px 0;
     }
+    .headline-text {
+      text-align: left;
+    }
+    .row {
+      display: flex;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <section id="intro">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I'm Kevin McCook, a passionate junior front end developer ready to take on new challenges.</p>
-      <img src="https://via.placeholder.com/150" alt="Kevin McCook" class="rounded-circle">
-    </section>
+    <div class="row">
+      <div class="col-md-6">
+        <section id="intro">
+          <div class="headline-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Kevin McCook, a passionate junior front end developer ready to take on new challenges.</p>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/150" alt="Kevin McCook" class="rounded-circle">
+      </div>
+    </div>
     
     <section id="portfolio">
       <h2>Portfolio Showcase</h2>
