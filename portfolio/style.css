@@ -1,0 +1,68 @@
+/* Apply a modern layout using CSS Grid */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+#navbar {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style the sections */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Add a gradient background to sections */
+#hero {
+  background: linear-gradient(to right, #f8f9fa, #f0f1f2);
+}
+
+#about {
+  background: linear-gradient(to right, #f0f1f2, #e9eaeb);
+}
+
+#skills {
+  background: linear-gradient(to right, #e9eaeb, #e1e2e3);
+}
+
+#education {
+  background: linear-gradient(to right, #e1e2e3, #d9dadb);
+}
+
+#projects {
+  background: linear-gradient(to right, #d9dadb, #d1d2d3);
+}
+
+/* Style the footer */
+#footer {
+  background-color: #333;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+}
+html {
+    scroll-behavior: smooth;
+    transition-duration: 5s;
+}
