@@ -1,68 +1,404 @@
-/* Apply a modern layout using CSS Grid */
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+
+
+
+:root {
+    --light-color: #ffff; /* Light green */
+    --black-color: #000000; /* Light green */
+    --dark-color: #2e573e; /* Dark green */
+    --navbar-color:#d3d2d2e1;
+    --button-color:#351a39;
+    --blue-color:#0c8dd2;
+    --button-hover-color: #5c9660; /* Adjust hover color as needed */
+    --nav-textcolor: var(--dark-color);
+    --primary-fontcolor: #b26b46 /* Adjust primary font color */
+    --secondary-fontcolor: #666; /* Adjust secondary font color */
+    --soft-light-background: #f5f5f5; /* Soft light background color */
 }
 
-/* Style the navigation bar */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 #navbar {
-  background-color: #f8f9fa;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+    background-color: var(--button-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #d1d2d3;
+    padding-inline: 75px;}
+#navbar a{
+    color: #d1d2d3;
 }
 
 .navbar-nav {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-link {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--nav-textcolor);
+    font-size: larger;
+}
+
+.nav-link:hover {
+    color: var(--button-hover-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: var(--soft-light-background);
+}
+
+.section-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-fontcolor);
+}
+
+.section-content {
+    color: var(--secondary-fontcolor);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #5c9660;
+    color: white;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-info {
+    margin-top: 10px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#footer {
+    background-color: #333;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition-duration: 5s;
+}
+
+/* Apply a modern layout using CSS Grid */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.accent-color {
+    color: #d99671;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--light-color); /* Use variable for nav text color */
+}
+
+.nav-link:hover {
+    color: var(--button-hover-color); /* Use variable for hover color */
 }
 
 /* Style the sections */
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px; /* Apply padding to sections */
+    background-color: var(--soft-light-background); /* Apply soft light background color to sections */
+    object-fit: fill;
 }
 
-/* Add a gradient background to sections */
+.section-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-fontcolor); /* Apply primary font color to section titles */
+}
+
+.section-content {
+    color: var(--secondary-fontcolor); /* Apply secondary font color to section content */
+}
+
+/* Add gradient background to sections */
 #hero {
-  background: linear-gradient(to right, #f8f9fa, #f0f1f2);
+    background-image: linear-gradient(to bottom, #00000036, #000000cc), 
+                      url('https://img.freepik.com/free-photo/sunset-silhouettes-trees-mountains-generative-ai_169016-29371.jpg?w=996&t=st=1717175572~exp=1717176172~hmac=cb6496510621500ee269a86ec8a0cf67078533db0aca9e31554232918752bb94');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    padding-inline: 75px;
+}
+
+#hero p {
+    color: var(--light-color);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#hero h1 {
+    color: #d99671;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 2.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#hero button {
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.text-area {
+    width: 100%;
+    align-self: flex-end;
+    justify-content: flex-end;
+    text-align: right;
 }
 
 #about {
-  background: linear-gradient(to right, #f0f1f2, #e9eaeb);
+    background: linear-gradient(to right, #daefe3, #e9eaeb);
+    padding-inline: 75px;
+    text-align: justify
+
 }
 
 #skills {
-  background: linear-gradient(to right, #e9eaeb, #e1e2e3);
+    background: linear-gradient(to right, #e9eaeb, #e1e2e3);
 }
 
 #education {
-  background: linear-gradient(to right, #e1e2e3, #d9dadb);
+    background: linear-gradient(45deg, #e1e2e3, #e9eaeb);
 }
 
 #projects {
-  background: linear-gradient(to right, #d9dadb, #d1d2d3);
+    background: linear-gradient(to right, #d9dadb, #d1d2d3);
 }
 
 /* Style the footer */
 #footer {
-  background-color: #333;
-  color: #f8f9fa;
-  text-align: center;
-  padding: 10px;
+    background-color: #333;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
 }
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    section {
+        padding: 80px 40px;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        padding: 60px 30px;
+    }
+
+    #hero h1 {
+        font-size: 35px;
+    }
+
+    #hero p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 20px;
+    }
+
+    #hero h1 {
+        font-size: 30px;
+        line-height: 2;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .text-area {
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 20px 10px;
+    }
+
+    #hero h1 {
+        font-size: 25px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: var(--dark-color);
+    color: #edeeed;
+}
+
+.project-card {
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.project-card button:hover {
+    background-color: #0c6a9c;
+}
+
 html {
     scroll-behavior: smooth;
     transition-duration: 5s;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        padding: 10px;
+    }
+
+    .project-card button {
+        bottom: 8px;
+        left: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 8px;
+    }
+
+    .project-card button {
+        bottom: 6px;
+        left: 6px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 5px;
+    }
+
+    .project-card button {
+        bottom: 5px;
+        left: 5px;
+        font-size: 10px;
+    }
 }
