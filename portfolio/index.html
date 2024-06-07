@@ -56,6 +56,9 @@
         <h2 style=" color:azure">Welcome to Your Next Adventure</h2>
         <p style=" color:azure">An Empowering Junior Developers to Shape the Future of Software</p>
         <button onclick="window.open('/Download/Resume.pdf','_blank');" class="button">Download Resume</button>
+        <button onclick="downloadResume('/Download/Resume.pdf');" class="button">Download Resume</button>
+
+     
         <!-- <button onclick="smoothScroll('services')" class="button">Need Help</button> -->
         <button onclick="toggleDarkMode()" class="button">Dark Mode</button>
 
@@ -297,6 +300,29 @@ function toggleDarkMode() {
 
     localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode').toString());
 }
+
+
+
+
+
+
+function downloadResume(fileUrl) {
+    // Create an anchor element
+    var link = document.createElement('a');
+    // Set the href attribute to the file URL
+    link.href = fileUrl;
+    // Set the download attribute to force download
+    link.download = 'Kevin_McCook_Resume_UT24_Software_Developer.pdf';
+    // Hide the link
+    link.style.display = 'none';
+    // Append the link to the document body
+    document.body.appendChild(link);
+    // Trigger a click event on the link
+    link.click();
+    // Clean up by removing the link from the document body
+    document.body.removeChild(link);
+}
+
 
 
 </script>   
