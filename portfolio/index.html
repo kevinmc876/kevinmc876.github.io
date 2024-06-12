@@ -56,7 +56,7 @@
         <h2 style=" color:azure">Welcome to Your Next Adventure</h2>
         <p style=" color:azure">An Empowering Junior Developers to Shape the Future of Software</p>
         <button onclick="window.open('/Download/Resume.pdf','_blank');" class="button">Download Resume</button>
-        <button onclick="downloadResume('/Download/Resume.pdf');" class="button">Download Resume</button>
+        <!-- <button onclick="downloadResume('/Download/Resume.pdf');" class="button">Download Resume</button> -->
         <button onclick="window.open('https://drive.google.com/drive/folders/18EAbfKGf0o4mS-FUopIrux4wyhfJ4pip?usp=drive_link','_blank');">Open Resume Link</button>
       
       
@@ -96,7 +96,10 @@
         <div class="tab-pane fade show active " id="information" role="tabpanel" aria-labelledby="information-tab">
             <div class="row">
                 <div class="col-md-4 mb-lg-4">
-                    <img  class ="img-fluid images rounded" src="/Assests/images/profile1.jpeg" alt="Placeholder Image" class="img-fluid">
+                    <picture>
+                        <source srcset="/Assests/images/profile1.webp" type="image/webp">
+                        <img src="/Assests/images/profile1.jpeg" alt="Placeholder Image" class="img-fluid" onerror="this.onerror=null; this.src='/Assests/images/profile1.png'">
+                    </picture>
                 </div>
                 <div class="col-md-8 line-height">
                     <section id="professional-summary" class="container py-5">
