@@ -57,9 +57,41 @@
         <p style=" color:azure">An Empowering Junior Developers to Shape the Future of Software</p>
         <button onclick="window.open('/Download/Resume.pdf','_blank');" class="button">Download Resume</button>
         <button onclick="downloadResume('/Download/Resume.pdf');" class="button">Download Resume</button>
-
-     
-        <!-- <button onclick="smoothScroll('services')" class="button">Need Help</button> -->
+      <form action="" method="POST" class="form-inline" role="form">
+        
+        <?php
+          function downloadResume($resumePath) {
+              if (file_exists($resumePath)) {
+                  header('Content-Description: File Transfer');
+                  header('Content-Type: application/octet-stream');
+                  header('Content-Disposition: attachment; filename="'.basename($resumePath).'"');
+                  header('Expires: 0');
+                  header('Cache-Control: must-revalidate');
+                  header('Pragma: public');
+                  header('Content-Length: '.filesize($resumePath));
+                  readfile($resumePath);
+                  exit;
+              } else {
+                  // handle the case when the file does not exist
+                  echo 'The resume file does not exist. Please contact the webmaster.';
+              }
+          }
+        ?>
+      
+        <div class="form-group">
+            <label class="sr-only" for="">label</label>
+            <input type="email" class="form-control" id="" placeholder="Input field">
+        </div>
+      
+        
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+      
+        <button onclick="window.open('https://drive.google.com/drive/folders/18EAbfKGf0o4mS-FUopIrux4wyhfJ4pip?usp=drive_link', '_blank')" class="button">Open Resume Link</button>
+      
+      
         <button onclick="toggleDarkMode()" class="button">Dark Mode</button>
 
 
@@ -75,9 +107,13 @@
     
     
     <ul class="nav nav-tabs font-weight-bold font-size-18" id="myTab" role="tablist">
-        <li class="nav-item">
+        
+                <li class="nav-item">
             <a class="nav-link active" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="true">Background</a>
         </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link active" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="true">Background</a>
+        </li> -->
         <li class="nav-item">
             <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Services</a>
         </li>
@@ -312,7 +348,7 @@ function downloadResume(fileUrl) {
     // Set the href attribute to the file URL
     link.href = fileUrl;
     // Set the download attribute to force download
-    link.download = 'Kevin_McCook_Resume_UT24_Software_Developer.pdf';
+    link.download = 'Resume.pdf';
     // Hide the link
     link.style.display = 'none';
     // Append the link to the document body
