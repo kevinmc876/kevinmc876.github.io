@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Kevin McCook</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
@@ -24,7 +22,7 @@
    <body>
 
  <!-- 
-    <nav id="navbar" class="navbar navbar-expand-lg  ">
+   
 
     <a class="navbar-brand" href="#">Kevin <span class="accent-color">McCook</span></a>
     
@@ -35,18 +33,9 @@
     </button>
 -->
     <!-- this is the navbar -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#hero" onclick="smoothScroll('hero')">Hero</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about" onclick="smoothScroll('about')">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services" onclick="smoothScroll('services')">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills" onclick="smoothScroll('skills')">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education" onclick="smoothScroll('education')">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects" onclick="smoothScroll('projects')">Projects</a></li>
-            <li class="nav-item"><button class="btn btn-dark-mode" onclick="toggleDarkMode()"> Dark Mode</button></li>
-        </ul>
-    </div>
-</nav>
+<div class="navbar " style="height: 20px; background-color: var(--light-color);">
+
+</div>
 
 <!-- this is the hero section  -->
 <div id="hero">
@@ -76,12 +65,14 @@
     
     <ul class="nav nav-tabs font-weight-bold font-size-18" id="myTab" role="tablist">
         
-                <li class="nav-item">
-            <a class="nav-link active" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="true">Background</a>
+        <li class="nav-item">
+            <a class="nav-link active" id="Bio-tab" data-toggle="tab" href="#bio" role="tab" aria-controls="bio" aria-selected="true">Biography</a>
         </li>
-        <!-- <li class="nav-item">
-            <a class="nav-link active" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="true">Background</a>
-        </li> -->
+
+        <li class="nav-item">
+            <a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false">Background</a>
+        </li>
+     
         <li class="nav-item">
             <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Services</a>
         </li>
@@ -93,6 +84,34 @@
 
 
     <div class="tab-content w-100 h-100 p-3  rounded ml-lg-4">
+
+        <div class="tab-pane fade show active " id="bio" role="tabpanel" aria-labelledby="information-tab">
+
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+               
+                <div class="d-flex flex-column justify-content-center">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQHhTW22NJal6w/profile-displayphoto-shrink_800_800/0/1686538335922?e=1723680000&v=beta&t=KyBcrhZt51j_EE6lXsYEcNNAuBX7zsuF8Yaiw28bGxE" class="rounded-circle" style="width: 150px; height: 150px;">
+                </div>
+
+
+                <div class="d-flex flex-column justify-content-center mx-lg-3">
+                    <h2>PROFESSIONAL SUMMARY</h2>
+                    <p>I am a motivated and driven software solutions developer with three years of
+                    focused experience in front-end development. Passionate about creating
+                    intuitive, responsive user interfaces with HTML, CSS, and JavaScript, I am
+                    dedicated to continuous learning and innovation. My commitment to
+                    enhancing user experiences drives me to deliver high-quality, scalable
+                    solutions that make a meaningful impact.</p>
+                </div>
+            </div>
+
+
+        
+
+        </div>
+
+
+
         <div class="tab-pane fade show active " id="information" role="tabpanel" aria-labelledby="information-tab">
             <div class="row">
                 <div class="col-md-4 mb-lg-4">
@@ -183,7 +202,7 @@
         <div class="tab-pane fade " id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <section id="contact">
                 <div class="row">
-                    <div class="col-md-6 order-md-2 p-4 border rounded bg-light shadow-sm">
+                    <div class="col-md-6 order-md-2 p-4 border rounded  shadow-sm">
                         <h2 class="mb-4 ">Contact Information</h2>
                         <p><strong>Phone:</strong> <a href="tel:+18763498516" class="text-decoration-none text-dark">876-349-8516</a></p>
                         <p><strong>Email:</strong> <a href="mailto:kevinmccook876@gmail.com" class="text-decoration-none text-dark">kevinmccook876@gmail.com</a></p>
@@ -203,7 +222,7 @@
 
 </section>
 
-
+<!--  this is -->
 <section id="projects" class="py-5 ">
 <h2 class="section-title  justify-content-center">Projects( Under Construction)</h2>
     <div class="container">
@@ -257,6 +276,25 @@
 </section>
 
 
+<footer class="footer bg-black text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fab fa-linkedin me-2"></i> <a href="https://www.linkedin.com/in/kevin-mccook-0270b323a/" class="footer-link">LinkedIn</a></li>
+                    <li class="mb-2"><i class="fab fa-github me-2"></i> <a href="https://github.com/kevinmc876" class="footer-link">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-envelope me-2"></i> Email: keivnmcook876@gmail</li>
+                    <li class="mb-2"><i class="fas fa-phone me-2"></i> Phone: (+187)634-98516 </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="/script.js">
 
 // Ensure that the JavaScript works correctly by placing the code in the same file
@@ -266,21 +304,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function showTab(event, tabId) {
-    event.preventDefault();
-    
+    event?.preventDefault();
+
     // Remove active class from all tabs
-    document.querySelectorAll('.tab-content').forEach(function (content) {
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
         content.classList.remove('active');
     });
 
     // Hide all tab content
-    document.querySelectorAll('.tab-content').forEach(function (content) {
+    tabContents.forEach(content => {
         content.classList.remove('d-block');
         content.classList.add('d-none');
     });
 
     // Remove active class from all nav links
-    document.querySelectorAll('nav a').forEach(function (link) {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
         link.classList.remove('active');
     });
 
@@ -354,24 +394,7 @@ function downloadResume(fileUrl) {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <footer class="footer bg-black text-light py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fab fa-linkedin me-2"></i> <a href="https://www.linkedin.com/in/kevin-mccook-0270b323a/" class="footer-link">LinkedIn</a></li>
-                        <li class="mb-2"><i class="fab fa-github me-2"></i> <a href="https://github.com/kevinmc876" class="footer-link">GitHub</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> Email: keivnmcook876@gmail</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i> Phone: (+187)634-98516 </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     
 
 </body>

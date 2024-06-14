@@ -90,7 +90,8 @@ body.dark-mode .card:hover {
 body.dark-mode section,
 body.dark-mode,
 body.dark-mode,
-body.dark-mode {
+body.dark-mode,
+#contact a.dark-mode {
     color: var(--primary-fontcolor);
     background-color: var(--soft-light-background);
     outline: none;
@@ -189,6 +190,57 @@ section {
     border-radius: 10px;
 }
 
+.image-container {
+    position: relative;
+    width: auto;
+    height: 35%;
+    border-radius: 50%;
+    padding-bottom: 60%;
+}
+
+.image-overlay {
+    margin-top: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(0, 0, 0, 0.5)
+    );
+}
+
+.profile-img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: -55px;
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .img-thumbnail {
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+
 .project-info {
     margin-top: 10px;
 }
@@ -214,6 +266,7 @@ section {
     text-align: left ;
     padding: 10px;
     margin-top: 50px;
+    width: 100%;
 
 }
 
@@ -378,7 +431,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(38, 64, 60, 0.155);
+    background-color: rgba(2, 2, 53, 0.304);
     color: white;
  
 
